@@ -5,7 +5,7 @@ import {
   boundedText,
   httpUrl,
   type ToolDefinition,
-} from "@nasdigital/mcp-server-core";
+} from "@nasdigitaluk/mcp-server-core";
 
 /**
  * Instagram publishing is two calls: create a media container, then publish

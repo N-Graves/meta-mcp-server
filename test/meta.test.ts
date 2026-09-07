@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { HttpClient } from "@nasdigital/mcp-server-core";
+import { HttpClient } from "@nasdigitaluk/mcp-server-core";
 import { buildTools, type MetaClients } from "../src/tools.js";
 
 const json = (body: unknown) =>
