@@ -7,7 +7,7 @@ MIT licensed.
 ## Install
 
 ```bash
-npm install -g @nasdigital/meta-mcp
+npm install -g @nasdigitaluk/meta-mcp
 ```
 
 ## Configuration
@@ -100,7 +100,7 @@ SMOKE_ENV='{"META_PAGE_ACCESS_TOKEN":"x"}' npm run smoke    # real MCP over stdi
 
 ## Built on
 
-[`@nasdigital/mcp-server-core`](https://github.com/N-Graves/mcp-server-core).
+[`@nasdigitaluk/mcp-server-core`](https://github.com/N-Graves/mcp-server-core).
 
 ## Licence
 
