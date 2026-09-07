@@ -1,0 +1,54 @@
+{
+  "name": "@nasdigital/meta-mcp",
+  "version": "1.0.0",
+  "description": "Model Context Protocol server for the Meta Graph API - Facebook Pages and Instagram Business accounts.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "meta-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "vendor",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "generate": "node scripts/generate-operations.mjs",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "lint": "tsc --noEmit",
+    "smoke": "npm run build && node scripts/smoke.mjs",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "dependencies": {
+    "@nasdigital/mcp-server-core": "file:../mcp-server-core",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "author": "Nathan Graves",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N-Graves/meta-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/N-Graves/meta-mcp-server/issues"
+  },
+  "homepage": "https://github.com/N-Graves/meta-mcp-server#readme",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "llm",
+    "ai-tools",
+    "meta"
+  ]
+}
